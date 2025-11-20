@@ -1,0 +1,43 @@
+/* 1. Reset global do estilo da pagina*/
+* {
+    margin: 0;
+    padding: 0;/* espaçamento interno*/
+    box-sizing: border-box;
+}
+
+/* 2. Definição das configurações globais*/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. O componente do post - O FOCO DO NOSSO ESTUDO */
+
+.post-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background-color: #85ccd2;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do card */
+    max-width: 700px;
+   
+}
+
+/* 4. Estilização dos elementos filhos do CSS Flexbox */
+
+.post-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+

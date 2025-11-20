@@ -1,0 +1,67 @@
+
+/*1. RESERT GLOBAL*/
+* {
+    margin: 0;
+    padding: 0;/* espaçamento interno*/
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+}
+
+/* 2. Definição das configurações globais*/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. O componente do post - O FOCO DO NOSSO ESTUDO */
+
+.post-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background-color: #85ccd2;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do card */
+    max-width: 700px;
+   
+}
+
+/* 4. Estilização dos elementos filhos do CSS Flexbox */
+
+.post-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content{
+    padding: 20px;/*O padding é aplicado para dar espaço interno ao texto, afetandp apenas o conteudo e não a imagem*/
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.post-excerpt {
+    margin-bottom: 0;
+    color: #718096;
+    line-height: 1.6;
+
+}
+
+@media  screen and(max-widht: 500px) {
+ .post-card{
+    flex-direction: column;
+ }
+    
+}
